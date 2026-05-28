@@ -1,0 +1,92 @@
+{
+  "settled": {
+    "coordinateSystem": "DOM UI, origin top-left, cards and controls visible in labeled regions",
+    "phase": "settled",
+    "bankroll": 975,
+    "bet": 25,
+    "betChips": [
+      25
+    ],
+    "visibleChipValues": [
+      1,
+      5,
+      25,
+      100
+    ],
+    "trainingPoints": 1,
+    "rules": "6D · H17 · DAS · Insurance · No surrender · BJ 6:5",
+    "dealer": {
+      "upcard": "4S",
+      "cards": [
+        "4S",
+        "2S",
+        "8S",
+        "7S"
+      ],
+      "total": 21
+    },
+    "activeHandIndex": 0,
+    "hands": [
+      {
+        "cards": [
+          "7S",
+          "9H"
+        ],
+        "total": 16,
+        "soft": false,
+        "bet": 25,
+        "status": "settled",
+        "outcome": "lose",
+        "canEarnStrategyPoint": true
+      }
+    ],
+    "availableActions": [],
+    "message": "Round settled. The house takes this one.",
+    "latestFeedback": "Correct: stand."
+  },
+  "dealtAgain": {
+    "coordinateSystem": "DOM UI, origin top-left, cards and controls visible in labeled regions",
+    "phase": "insurance",
+    "bankroll": 950,
+    "bet": 25,
+    "betChips": [
+      25
+    ],
+    "visibleChipValues": [
+      1,
+      5,
+      25,
+      100
+    ],
+    "trainingPoints": 1,
+    "rules": "6D · H17 · DAS · Insurance · No surrender · BJ 6:5",
+    "dealer": {
+      "upcard": "AH",
+      "cards": [
+        "AH"
+      ],
+      "total": 11
+    },
+    "activeHandIndex": 0,
+    "hands": [
+      {
+        "cards": [
+          "5H",
+          "QC"
+        ],
+        "total": 15,
+        "soft": false,
+        "bet": 25,
+        "status": "active",
+        "outcome": "pending",
+        "canEarnStrategyPoint": true
+      }
+    ],
+    "availableActions": [
+      "insurance"
+    ],
+    "message": "Choose the basic-strategy play.",
+    "latestFeedback": null
+  },
+  "errors": []
+}

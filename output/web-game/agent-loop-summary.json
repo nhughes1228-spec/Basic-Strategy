@@ -1,0 +1,920 @@
+{
+  "errors": [],
+  "rounds": [
+    {
+      "round": 0,
+      "phase": "settled",
+      "bankroll": 1005,
+      "bet": 5,
+      "trainingPoints": 2,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "2H",
+            "2D",
+            "4D",
+            "10H"
+          ],
+          "total": 18,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "phase": "settled",
+      "bankroll": 1000,
+      "bet": 5,
+      "trainingPoints": 2,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "4D",
+            "QD",
+            "KH"
+          ],
+          "total": 24,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "phase": "settled",
+      "bankroll": 995,
+      "bet": 5,
+      "trainingPoints": 3,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "6S",
+            "8D",
+            "10C"
+          ],
+          "total": 24,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "phase": "settled",
+      "bankroll": 995,
+      "bet": 5,
+      "trainingPoints": 4,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "JC",
+            "JS"
+          ],
+          "total": 20,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "phase": "settled",
+      "bankroll": 1000,
+      "bet": 5,
+      "trainingPoints": 6,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "5S",
+            "4D",
+            "7S",
+            "5C"
+          ],
+          "total": 21,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "phase": "settled",
+      "bankroll": 995,
+      "bet": 5,
+      "trainingPoints": 7,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "6S",
+            "JS",
+            "6C"
+          ],
+          "total": 22,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "phase": "settled",
+      "bankroll": 990,
+      "bet": 5,
+      "trainingPoints": 8,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "7C",
+            "JS"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "phase": "settled",
+      "bankroll": 985,
+      "bet": 5,
+      "trainingPoints": 8,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "AC",
+            "6D"
+          ],
+          "total": 17,
+          "soft": true,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "phase": "settled",
+      "bankroll": 985,
+      "bet": 5,
+      "trainingPoints": 10,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "JD",
+            "2S",
+            "8H"
+          ],
+          "total": 20,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "phase": "settled",
+      "bankroll": 990,
+      "bet": 5,
+      "trainingPoints": 11,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "9D",
+            "QD"
+          ],
+          "total": 19,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "phase": "settled",
+      "bankroll": 985,
+      "bet": 5,
+      "trainingPoints": 12,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "7S",
+            "KD"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "phase": "settled",
+      "bankroll": 990,
+      "bet": 5,
+      "trainingPoints": 14,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "3H",
+            "AH",
+            "6D"
+          ],
+          "total": 20,
+          "soft": true,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "phase": "settled",
+      "bankroll": 995,
+      "bet": 5,
+      "trainingPoints": 17,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "4S",
+            "AD",
+            "KC",
+            "2H"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "phase": "settled",
+      "bankroll": 1000,
+      "bet": 5,
+      "trainingPoints": 18,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "7D",
+            "JH"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "phase": "settled",
+      "bankroll": 995,
+      "bet": 5,
+      "trainingPoints": 19,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "7H",
+            "QD"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "phase": "settled",
+      "bankroll": 1000,
+      "bet": 5,
+      "trainingPoints": 22,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "3C",
+            "3D",
+            "7H",
+            "8C"
+          ],
+          "total": 21,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 22,
+      "message": "Blackjack paid. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "AS",
+            "10D"
+          ],
+          "total": 21,
+          "soft": true,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "blackjack",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 23,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "AS",
+            "9C"
+          ],
+          "total": 20,
+          "soft": true,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 24,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "10H",
+            "8H"
+          ],
+          "total": 18,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 19,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 25,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "KH",
+            "6H",
+            "AS"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 20,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 26,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "4D",
+            "9H",
+            "9H"
+          ],
+          "total": 22,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 21,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 29,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "2H",
+            "4H",
+            "6H",
+            "8D"
+          ],
+          "total": 20,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 22,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 30,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "2D",
+            "10S",
+            "QD"
+          ],
+          "total": 22,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 23,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 30,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "6C",
+            "AC"
+          ],
+          "total": 17,
+          "soft": true,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 24,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 32,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "5C",
+            "QS",
+            "4C"
+          ],
+          "total": 19,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 25,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 33,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "10S",
+            "KS"
+          ],
+          "total": 20,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 26,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 35,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "JH",
+            "KD"
+          ],
+          "total": 20,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 27,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 37,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "AD",
+            "5H",
+            "6S",
+            "JC"
+          ],
+          "total": 22,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 28,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 38,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "KS",
+            "9S"
+          ],
+          "total": 19,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 29,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 40,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "8H",
+            "QS"
+          ],
+          "total": 18,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 30,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 42,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "5D",
+            "AH",
+            "8H",
+            "9H"
+          ],
+          "total": 23,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 31,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 43,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "6H",
+            "KC",
+            "3C"
+          ],
+          "total": 19,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 32,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 44,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "9C",
+            "7H",
+            "KC"
+          ],
+          "total": 26,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 33,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 46,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "2C",
+            "6D",
+            "10C"
+          ],
+          "total": 18,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 34,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 49,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "4H",
+            "AS",
+            "KS",
+            "2S"
+          ],
+          "total": 17,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "lose",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 35,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 52,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "3D",
+            "4H",
+            "7S",
+            "AC",
+            "JC"
+          ],
+          "total": 25,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 36,
+      "phase": "settled",
+      "bankroll": 1006,
+      "bet": 5,
+      "trainingPoints": 54,
+      "message": "Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "7H",
+            "2S",
+            "JH"
+          ],
+          "total": 19,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "push",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 37,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 55,
+      "message": "Dealer busts. Round settled.",
+      "hands": [
+        {
+          "cards": [
+            "5C",
+            "8S",
+            "5C"
+          ],
+          "total": 18,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 38,
+      "phase": "settled",
+      "bankroll": 1016,
+      "bet": 5,
+      "trainingPoints": 58,
+      "message": "Round settled. Nice win.",
+      "hands": [
+        {
+          "cards": [
+            "8H",
+            "3D",
+            "10C"
+          ],
+          "total": 21,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "win",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    },
+    {
+      "round": 39,
+      "phase": "settled",
+      "bankroll": 1011,
+      "bet": 5,
+      "trainingPoints": 58,
+      "message": "Round settled. The house takes this one.",
+      "hands": [
+        {
+          "cards": [
+            "4D",
+            "QH",
+            "JH"
+          ],
+          "total": 24,
+          "soft": false,
+          "bet": 5,
+          "status": "settled",
+          "outcome": "bust",
+          "canEarnStrategyPoint": true
+        }
+      ]
+    }
+  ]
+}
