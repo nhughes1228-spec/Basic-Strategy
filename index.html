@@ -85,11 +85,13 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.28);
       }
 
-      .strategy-table .action-hit {
+      .strategy-table .action-hit,
+      .strategy-table .action-surrender {
         background: linear-gradient(135deg, #23e46b, #0e9f45) !important;
       }
 
-      .strategy-table .action-hit::after {
+      .strategy-table .action-hit::after,
+      .strategy-table .action-surrender::after {
         content: "H";
         background: #05782e;
       }
@@ -117,17 +119,8 @@
       }
 
       .strategy-table .action-split::after {
-        content: "P";
+        content: "SP";
         background: #5426a5;
-      }
-
-      .strategy-table .action-surrender {
-        background: linear-gradient(135deg, #ffb84d, #e26a00) !important;
-      }
-
-      .strategy-table .action-surrender::after {
-        content: "R";
-        background: #ad4f00;
       }
 
       .book-legend span {
@@ -135,6 +128,10 @@
         align-items: center;
         gap: 6px;
         font-weight: 800;
+      }
+
+      .book-legend span:nth-child(5) {
+        display: none !important;
       }
 
       .book-legend b {
@@ -148,16 +145,16 @@
         line-height: 1;
       }
 
+      .book-legend span:nth-child(4) b {
+        min-width: 34px;
+      }
+
       .book-legend span:has(b)::before {
         content: "";
         width: 16px;
         height: 16px;
         border-radius: 5px;
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
-      }
-
-      .book-legend span:has(b:first-child)::before {
-        background: #ddd;
       }
 
       .book-legend span:nth-child(1)::before { background: #23e46b; }
@@ -168,8 +165,6 @@
       .book-legend span:nth-child(3) b { background: #0b3f9e; }
       .book-legend span:nth-child(4)::before { background: #b26cff; }
       .book-legend span:nth-child(4) b { background: #5426a5; }
-      .book-legend span:nth-child(5)::before { background: #ffb84d; }
-      .book-legend span:nth-child(5) b { background: #ad4f00; }
 
       @media (max-width: 680px) {
         #hit-btn,
@@ -183,6 +178,56 @@
         #surrender-btn {
           min-height: 52px;
           font-size: 0.92rem;
+        }
+
+        .book-backdrop {
+          padding: 8px !important;
+        }
+
+        .strategy-book {
+          width: calc(100vw - 16px) !important;
+          padding: 10px !important;
+        }
+
+        .strategy-scroll {
+          overflow-x: hidden !important;
+        }
+
+        .strategy-table table {
+          min-width: 0 !important;
+          width: 100% !important;
+          table-layout: fixed;
+          font-size: clamp(0.56rem, 2.25vw, 0.72rem) !important;
+        }
+
+        .strategy-table th,
+        .strategy-table td {
+          padding: 4px 2px !important;
+        }
+
+        .strategy-table th:first-child {
+          min-width: 0 !important;
+          width: 19% !important;
+          font-size: 0.66rem !important;
+        }
+
+        .strategy-table td[class^="action-"] {
+          min-width: 0 !important;
+          height: 32px !important;
+          padding: 3px 1px !important;
+        }
+
+        .strategy-table td[class^="action-"]::after {
+          min-width: 22px;
+          height: 17px;
+          padding: 0 5px;
+          font-size: 0.58rem;
+        }
+
+        .strategy-table .action-split::after {
+          min-width: 27px;
+          padding: 0 4px;
+          font-size: 0.52rem;
         }
       }
     </style>
@@ -203,6 +248,14 @@
           root.querySelectorAll?.('img[src^="/cards/"]').forEach(normalizeCardImage);
         }
 
+        function normalizeStrategyBook(root = document) {
+          root.querySelectorAll?.(".book-legend span").forEach((item) => {
+            const badge = item.querySelector("b");
+            if (badge?.textContent?.trim() === "P") badge.textContent = "SP";
+            if (badge?.textContent?.trim() === "R") item.remove();
+          });
+        }
+
         document.addEventListener(
           "error",
           (event) => {
@@ -216,7 +269,10 @@
           for (const mutation of mutations) {
             for (const node of mutation.addedNodes) {
               if (node instanceof HTMLImageElement) normalizeCardImage(node);
-              if (node instanceof Element) normalizeAllCardImages(node);
+              if (node instanceof Element) {
+                normalizeAllCardImages(node);
+                normalizeStrategyBook(node);
+              }
             }
           }
         });
@@ -224,10 +280,12 @@
         if (document.readyState === "loading") {
           document.addEventListener("DOMContentLoaded", () => {
             normalizeAllCardImages();
+            normalizeStrategyBook();
             observer.observe(document.body, { childList: true, subtree: true });
           });
         } else {
           normalizeAllCardImages();
+          normalizeStrategyBook();
           observer.observe(document.body, { childList: true, subtree: true });
         }
       })();
