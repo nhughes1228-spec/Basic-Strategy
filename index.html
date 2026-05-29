@@ -23,34 +23,24 @@
         padding-inline: 18px;
       }
 
-      .playing-card.back > img {
-        display: none !important;
-      }
-
-      .playing-card.back::before {
-        content: "";
-        position: absolute;
-        inset: 0;
+      .playing-card > img {
+        display: block !important;
         z-index: 2;
-        background: url("./cards/back.png") center / 111% 111% no-repeat;
       }
 
+      .playing-card.back {
+        background: transparent !important;
+      }
+
+      .playing-card.back::before,
       .playing-card[aria-label$="S"]::before,
       .playing-card[aria-label$="H"]::before,
       .playing-card[aria-label$="D"]::before,
       .playing-card[aria-label$="C"]::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-        background-repeat: no-repeat;
-        background-size: 482% 424%;
+        content: none !important;
+        display: none !important;
       }
 
-      .playing-card[aria-label$="S"] > img,
-      .playing-card[aria-label$="H"] > img,
-      .playing-card[aria-label$="D"] > img,
-      .playing-card[aria-label$="C"] > img,
       .playing-card[aria-label$="S"] .corner,
       .playing-card[aria-label$="H"] .corner,
       .playing-card[aria-label$="D"] .corner,
@@ -61,25 +51,6 @@
       .playing-card[aria-label$="C"] .pip {
         display: none !important;
       }
-
-      .playing-card[aria-label$="S"]::before { background-image: url("./cards/spades.png"); }
-      .playing-card[aria-label$="H"]::before { background-image: url("./cards/hearts.png"); }
-      .playing-card[aria-label$="D"]::before { background-image: url("./cards/diamonds.png"); }
-      .playing-card[aria-label$="C"]::before { background-image: url("./cards/clubs.png"); }
-
-      .playing-card[aria-label^="A"]::before { background-position: 5.8% 3.7%; }
-      .playing-card[aria-label^="2"]::before { background-position: 35.5% 3.7%; }
-      .playing-card[aria-label^="3"]::before { background-position: 64.7% 3.7%; }
-      .playing-card[aria-label^="4"]::before { background-position: 93.5% 3.7%; }
-      .playing-card[aria-label^="5"]::before { background-position: 5.8% 37.2%; }
-      .playing-card[aria-label^="6"]::before { background-position: 35.5% 37.2%; }
-      .playing-card[aria-label^="7"]::before { background-position: 64.7% 37.2%; }
-      .playing-card[aria-label^="8"]::before { background-position: 93.5% 37.2%; }
-      .playing-card[aria-label^="9"]::before { background-position: 5.8% 69.7%; }
-      .playing-card[aria-label^="10"]::before { background-position: 35.5% 69.7%; }
-      .playing-card[aria-label^="J"]::before { background-position: 64.7% 69.7%; }
-      .playing-card[aria-label^="Q"]::before { background-position: 93.5% 69.7%; }
-      .playing-card[aria-label^="K"]::before { background-position: 5.8% 100%; }
 
       @media (max-width: 680px) {
         #hit-btn,
