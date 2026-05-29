@@ -67,6 +67,52 @@
         }
       }
     </style>
+    <script>
+      (() => {
+        const cardAssetBase = new URL("./cards/", window.location.href).href;
+
+        function normalizeCardImage(img) {
+          const rawSrc = img.getAttribute("src") || "";
+          if (!rawSrc.startsWith("/cards/")) return;
+          const fileName = rawSrc.split("/").pop();
+          if (!fileName) return;
+          img.style.display = "";
+          img.src = cardAssetBase + fileName;
+        }
+
+        function normalizeAllCardImages(root = document) {
+          root.querySelectorAll?.('img[src^="/cards/"]').forEach(normalizeCardImage);
+        }
+
+        document.addEventListener(
+          "error",
+          (event) => {
+            const target = event.target;
+            if (target instanceof HTMLImageElement) normalizeCardImage(target);
+          },
+          true,
+        );
+
+        const observer = new MutationObserver((mutations) => {
+          for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+              if (node instanceof HTMLImageElement) normalizeCardImage(node);
+              if (node instanceof Element) normalizeAllCardImages(node);
+            }
+          }
+        });
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => {
+            normalizeAllCardImages();
+            observer.observe(document.body, { childList: true, subtree: true });
+          });
+        } else {
+          normalizeAllCardImages();
+          observer.observe(document.body, { childList: true, subtree: true });
+        }
+      })();
+    </script>
     <title>Blackjack Basic Strategy Trainer</title>
   </head>
   <body>
