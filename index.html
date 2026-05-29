@@ -7,6 +7,37 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Blackjack Trainer" />
     <link rel="manifest" href="./manifest.webmanifest" />
+    <style>
+      #hit-btn,
+      #stand-btn {
+        min-height: 62px;
+        padding-inline: 26px;
+        font-size: 1.05rem;
+        font-weight: 950;
+      }
+
+      #double-btn,
+      #split-btn,
+      #surrender-btn {
+        min-height: 52px;
+        padding-inline: 18px;
+      }
+
+      @media (max-width: 680px) {
+        #hit-btn,
+        #stand-btn {
+          min-height: 64px;
+          font-size: 1.08rem;
+        }
+
+        #double-btn,
+        #split-btn,
+        #surrender-btn {
+          min-height: 52px;
+          font-size: 0.92rem;
+        }
+      }
+    </style>
     <title>Blackjack Basic Strategy Trainer</title>
   </head>
   <body>

@@ -29,7 +29,7 @@ describe("getStrategyAdvice", () => {
       canDouble: true,
       canSplit: false,
       canSurrender: false,
-    }).action;
+    });
     const s17 = getStrategyAdvice({
       cards: [makeCard("A"), makeCard("7")],
       dealerUpcard: makeCard("2"),
@@ -39,7 +39,9 @@ describe("getStrategyAdvice", () => {
       canSurrender: false,
     }).action;
 
-    expect(h17).toBe("double");
+    expect(h17.action).toBe("double");
+    expect(h17.reason).toContain("soft 18");
+    expect(h17.reason).toContain("2, 3, 4, 5, or 6");
     expect(s17).toBe("stand");
   });
 
