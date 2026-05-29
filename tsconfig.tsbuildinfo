@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/blackjack/cards.ts","./src/blackjack/game.test.ts","./src/blackjack/game.ts","./src/blackjack/hand.test.ts","./src/blackjack/hand.ts","./src/blackjack/rules.ts","./src/blackjack/strategy.test.ts","./src/blackjack/strategy.ts","./src/blackjack/types.ts"],"version":"5.9.3"}

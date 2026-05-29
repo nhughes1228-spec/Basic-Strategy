@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local development and caches
+.vite/
+.cache/
+*.local
+*.tsbuildinfo
+
+# Generated browser/test artifacts
+output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Compiled config artifacts emitted by TypeScript
+vite.config.js
+vite.config.d.ts

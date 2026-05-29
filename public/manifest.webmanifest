@@ -1,7 +1,8 @@
 {
   "name": "Blackjack Basic Strategy Trainer",
   "short_name": "Blackjack",
-  "start_url": "/",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#0f4a3d",
   "theme_color": "#0f4a3d",
