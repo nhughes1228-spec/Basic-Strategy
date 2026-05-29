@@ -1,0 +1,361 @@
+{
+  "S": {
+    "source": "art_deco_spades_playing_cards_layout.png",
+    "sourceSize": [
+      1122,
+      1402
+    ],
+    "cards": {
+      "AS": {
+        "x": 51,
+        "y": 37,
+        "width": 237,
+        "height": 331
+      },
+      "2S": {
+        "x": 314,
+        "y": 37,
+        "width": 233,
+        "height": 331
+      },
+      "3S": {
+        "x": 571,
+        "y": 37,
+        "width": 233,
+        "height": 331
+      },
+      "4S": {
+        "x": 828,
+        "y": 37,
+        "width": 235,
+        "height": 331
+      },
+      "5S": {
+        "x": 51,
+        "y": 393,
+        "width": 236,
+        "height": 329
+      },
+      "6S": {
+        "x": 312,
+        "y": 393,
+        "width": 233,
+        "height": 329
+      },
+      "7S": {
+        "x": 570,
+        "y": 393,
+        "width": 234,
+        "height": 329
+      },
+      "8S": {
+        "x": 828,
+        "y": 393,
+        "width": 235,
+        "height": 329
+      },
+      "9S": {
+        "x": 51,
+        "y": 744,
+        "width": 236,
+        "height": 329
+      },
+      "10S": {
+        "x": 312,
+        "y": 744,
+        "width": 234,
+        "height": 329
+      },
+      "JS": {
+        "x": 570,
+        "y": 744,
+        "width": 233,
+        "height": 329
+      },
+      "QS": {
+        "x": 829,
+        "y": 744,
+        "width": 234,
+        "height": 329
+      },
+      "KS": {
+        "x": 51,
+        "y": 1084,
+        "width": 234,
+        "height": 304
+      }
+    }
+  },
+  "H": {
+    "source": "vintage_hearts_suit_playing_cards_grid.png",
+    "sourceSize": [
+      1122,
+      1402
+    ],
+    "cards": {
+      "AH": {
+        "x": 52,
+        "y": 37,
+        "width": 240,
+        "height": 335
+      },
+      "2H": {
+        "x": 322,
+        "y": 37,
+        "width": 234,
+        "height": 335
+      },
+      "3H": {
+        "x": 583,
+        "y": 38,
+        "width": 235,
+        "height": 335
+      },
+      "4H": {
+        "x": 844,
+        "y": 38,
+        "width": 234,
+        "height": 335
+      },
+      "5H": {
+        "x": 52,
+        "y": 400,
+        "width": 239,
+        "height": 336
+      },
+      "6H": {
+        "x": 322,
+        "y": 400,
+        "width": 233,
+        "height": 336
+      },
+      "7H": {
+        "x": 582,
+        "y": 400,
+        "width": 235,
+        "height": 336
+      },
+      "8H": {
+        "x": 844,
+        "y": 400,
+        "width": 234,
+        "height": 336
+      },
+      "9H": {
+        "x": 52,
+        "y": 761,
+        "width": 239,
+        "height": 334
+      },
+      "10H": {
+        "x": 322,
+        "y": 761,
+        "width": 233,
+        "height": 334
+      },
+      "JH": {
+        "x": 582,
+        "y": 761,
+        "width": 235,
+        "height": 334
+      },
+      "QH": {
+        "x": 844,
+        "y": 761,
+        "width": 234,
+        "height": 334
+      },
+      "KH": {
+        "x": 51,
+        "y": 1107,
+        "width": 237,
+        "height": 291
+      }
+    }
+  },
+  "C": {
+    "source": "elegant_art_deco_playing_cards_grid.png",
+    "sourceSize": [
+      1122,
+      1402
+    ],
+    "cards": {
+      "AC": {
+        "x": 47,
+        "y": 38,
+        "width": 241,
+        "height": 335
+      },
+      "2C": {
+        "x": 322,
+        "y": 38,
+        "width": 233,
+        "height": 335
+      },
+      "3C": {
+        "x": 585,
+        "y": 38,
+        "width": 234,
+        "height": 334
+      },
+      "4C": {
+        "x": 846,
+        "y": 38,
+        "width": 233,
+        "height": 334
+      },
+      "5C": {
+        "x": 48,
+        "y": 402,
+        "width": 238,
+        "height": 331
+      },
+      "6C": {
+        "x": 322,
+        "y": 402,
+        "width": 232,
+        "height": 330
+      },
+      "7C": {
+        "x": 585,
+        "y": 402,
+        "width": 232,
+        "height": 330
+      },
+      "8C": {
+        "x": 845,
+        "y": 402,
+        "width": 233,
+        "height": 331
+      },
+      "9C": {
+        "x": 48,
+        "y": 761,
+        "width": 238,
+        "height": 330
+      },
+      "10C": {
+        "x": 322,
+        "y": 761,
+        "width": 231,
+        "height": 329
+      },
+      "JC": {
+        "x": 585,
+        "y": 761,
+        "width": 231,
+        "height": 329
+      },
+      "QC": {
+        "x": 845,
+        "y": 761,
+        "width": 232,
+        "height": 329
+      },
+      "KC": {
+        "x": 48,
+        "y": 1113,
+        "width": 236,
+        "height": 281
+      }
+    }
+  },
+  "D": {
+    "source": "diamond_suit_playing_cards_layout.png",
+    "sourceSize": [
+      1122,
+      1402
+    ],
+    "cards": {
+      "AD": {
+        "x": 66,
+        "y": 45,
+        "width": 234,
+        "height": 334
+      },
+      "2D": {
+        "x": 329,
+        "y": 45,
+        "width": 231,
+        "height": 334
+      },
+      "3D": {
+        "x": 585,
+        "y": 45,
+        "width": 232,
+        "height": 334
+      },
+      "4D": {
+        "x": 843,
+        "y": 45,
+        "width": 233,
+        "height": 334
+      },
+      "5D": {
+        "x": 66,
+        "y": 409,
+        "width": 233,
+        "height": 332
+      },
+      "6D": {
+        "x": 327,
+        "y": 409,
+        "width": 231,
+        "height": 332
+      },
+      "7D": {
+        "x": 585,
+        "y": 409,
+        "width": 232,
+        "height": 332
+      },
+      "8D": {
+        "x": 843,
+        "y": 410,
+        "width": 232,
+        "height": 331
+      },
+      "9D": {
+        "x": 66,
+        "y": 770,
+        "width": 233,
+        "height": 333
+      },
+      "10D": {
+        "x": 327,
+        "y": 770,
+        "width": 231,
+        "height": 333
+      },
+      "JD": {
+        "x": 585,
+        "y": 770,
+        "width": 231,
+        "height": 333
+      },
+      "QD": {
+        "x": 843,
+        "y": 770,
+        "width": 232,
+        "height": 333
+      },
+      "KD": {
+        "x": 67,
+        "y": 1121,
+        "width": 232,
+        "height": 277
+      }
+    }
+  },
+  "back": {
+    "source": "elegant_art_deco_card_design.png",
+    "sourceSize": [
+      1060,
+      1484
+    ],
+    "x": 37,
+    "y": 37,
+    "width": 986,
+    "height": 1410
+  }
+}

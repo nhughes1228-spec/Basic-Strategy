@@ -1,0 +1,1 @@
+Clean card PNGs cropped to the detected card bounds, with fake checkerboard background removed. Put the PNG files from cards/ into public/cards/. Also remove the red fallback background from .playing-card.back in src/styles.css.
