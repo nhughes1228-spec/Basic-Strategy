@@ -23,6 +23,18 @@
         padding-inline: 18px;
       }
 
+      .playing-card.back > img {
+        display: none !important;
+      }
+
+      .playing-card.back::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        background: url("./cards/back.png") center / 111% 111% no-repeat;
+      }
+
       .playing-card[aria-label$="S"]::before,
       .playing-card[aria-label$="H"]::before,
       .playing-card[aria-label$="D"]::before,
