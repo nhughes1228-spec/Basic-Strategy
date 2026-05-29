@@ -52,6 +52,125 @@
         display: none !important;
       }
 
+      .strategy-table td[class^="action-"] {
+        position: relative;
+        min-width: 54px;
+        height: 42px;
+        padding: 5px 6px !important;
+        color: transparent !important;
+        text-shadow: none !important;
+        vertical-align: middle;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
+      }
+
+      .strategy-table td[class^="action-"]::after {
+        position: absolute;
+        inset: 50% auto auto 50%;
+        display: inline-grid;
+        place-items: center;
+        min-width: 34px;
+        height: 22px;
+        padding: 0 9px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 999px;
+        color: #fff;
+        font-size: 0.78rem;
+        font-weight: 1000;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+        transform: translate(-50%, -50%);
+        box-shadow:
+          0 1px 2px rgba(0, 0, 0, 0.24),
+          inset 0 1px 0 rgba(255, 255, 255, 0.28);
+      }
+
+      .strategy-table .action-hit {
+        background: linear-gradient(135deg, #23e46b, #0e9f45) !important;
+      }
+
+      .strategy-table .action-hit::after {
+        content: "H";
+        background: #05782e;
+      }
+
+      .strategy-table .action-stand {
+        background: linear-gradient(135deg, #ff595e, #c9182b) !important;
+      }
+
+      .strategy-table .action-stand::after {
+        content: "S";
+        background: #991321;
+      }
+
+      .strategy-table .action-double {
+        background: linear-gradient(135deg, #2f9cff, #1155cc) !important;
+      }
+
+      .strategy-table .action-double::after {
+        content: "D";
+        background: #0b3f9e;
+      }
+
+      .strategy-table .action-split {
+        background: linear-gradient(135deg, #b26cff, #6e35c9) !important;
+      }
+
+      .strategy-table .action-split::after {
+        content: "P";
+        background: #5426a5;
+      }
+
+      .strategy-table .action-surrender {
+        background: linear-gradient(135deg, #ffb84d, #e26a00) !important;
+      }
+
+      .strategy-table .action-surrender::after {
+        content: "R";
+        background: #ad4f00;
+      }
+
+      .book-legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 800;
+      }
+
+      .book-legend b {
+        display: inline-grid;
+        place-items: center;
+        min-width: 28px;
+        height: 19px;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 0.76rem;
+        line-height: 1;
+      }
+
+      .book-legend span:has(b)::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
+      }
+
+      .book-legend span:has(b:first-child)::before {
+        background: #ddd;
+      }
+
+      .book-legend span:nth-child(1)::before { background: #23e46b; }
+      .book-legend span:nth-child(1) b { background: #05782e; }
+      .book-legend span:nth-child(2)::before { background: #ff595e; }
+      .book-legend span:nth-child(2) b { background: #991321; }
+      .book-legend span:nth-child(3)::before { background: #2f9cff; }
+      .book-legend span:nth-child(3) b { background: #0b3f9e; }
+      .book-legend span:nth-child(4)::before { background: #b26cff; }
+      .book-legend span:nth-child(4) b { background: #5426a5; }
+      .book-legend span:nth-child(5)::before { background: #ffb84d; }
+      .book-legend span:nth-child(5) b { background: #ad4f00; }
+
       @media (max-width: 680px) {
         #hit-btn,
         #stand-btn {
